@@ -31,8 +31,8 @@ module Liberic
       #     const char* newPin);
       attach_eric_function :change_password, [:string, :string, :string], :int
 
-      # ERICAPI_DECL int STDCALL EricCheckBuFaNummer(const char* steuernummer);
-      attach_eric_function :check_bu_fa_nummer, [:string], :int
+      # ERICAPI_DECL int STDCALL EricPruefeBuFaNummer(const char* steuernummer);
+      attach_eric_function :pruefe_bu_fa_nummer, [:string], :int
 
       # ERICAPI_DECL int STDCALL EricCheckXML(const char* xml, const char* datenartVersion,
       #     EricRueckgabepufferHandle fehlertextPuffer);
